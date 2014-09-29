@@ -1,18 +1,19 @@
 4784project
 ===========
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%question 1: representing a steady state neuron's voltage and chanel
+%conductances over time
 
 %constants 
-
-gk = [36];
-gna = [120];
-gl = 0.3;
-Ek = -12;
-Ena = 115;
-El = 10.6;
-Vrest = -70;
-Cm = 1.0;
+gk = [36]; %potassium channel conductance
+gna = [120]; %Sodium channel conductance
+gl = 0.3; %leak channel conductance
+Ek = -12; %Voltage across potassium channel
+Ena = 115; %Voltage across soduim channel
+El = 10.6; %Voltage across 
+Vrest = -70; %Membrane resting voltage
+Cm = 1.0; %membrane capacitance 
 
 
 
