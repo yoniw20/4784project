@@ -1,5 +1,4 @@
 4784project
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %question 1: representing a steady state neuron's voltage and chanel
 %conductances over time
@@ -39,6 +38,7 @@ n = an/(an+Bn);
 h = ah/(ah+Bh);
 
 
+%initializing conductances  
 gna= m^3*h*gna_max;
 gk= n^4*gk_max;
 gna_vec = [gna];
@@ -226,6 +226,15 @@ legend([conductance_na, conductance_k], 'conductance for Na+', 'conductance for 
 axis([0,100,0,40])
 xlabel('Time (miliseconds)')
 ylabel('Coductance (mS/cm^2)')
+
+
+%%%%%%% the way the membrane responds is not that different than that to
+%%%%%%% the memrane at resting. Even though the neuron was stimulated
+%%%%%%% it was not enough to cause an action potential. Action potentials
+%%%%%%% work in an all or nothing way. If the theshold stimulus is not
+%%%%%%% reached, there is no action potential as in this case which can
+%%%%%%% be seen in the figure of the membrane potential wich stays at -70mv
+%%%%%%% and the conductances which also do not change. 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %question 3: representing neuron's voltage and chanel
 %conductances over time when stimulated by a constant current
@@ -337,3 +346,10 @@ legend([conductance_na, conductance_k], 'conductance for Na+', 'conductance for 
 axis([0,100,-100,100])
 xlabel('Time (miliseconds)')
 ylabel('Coductance (mS/cm^2)')
+
+%%%%%%%% in this case, the stimulus threshold potential is reached! 
+%an action potential can be seen :) In the membrane potential graph,
+%you can see the deploaraization and repolarization periods! In the 
+% conductance graph, you can see the conductances in the channels react to
+%the action potential. The conductances increase during deploaraization 
+%and come back to resting during repolarization
